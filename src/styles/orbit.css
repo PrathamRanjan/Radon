@@ -1,0 +1,25 @@
+@keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--start-angle) * 1deg)) translateY(calc(var(--radius) * -1px)) rotate(calc(var(--start-angle) * -1deg));
+  }
+  100% {
+    transform: rotate(calc(var(--start-angle) * 1deg + 360deg)) translateY(calc(var(--radius) * -1px)) rotate(calc(var(--start-angle) * -1deg - 360deg));
+  }
+}
+
+@keyframes orbit-reverse {
+  0% {
+    transform: rotate(calc(var(--start-angle) * 1deg)) translateY(calc(var(--radius) * -1px)) rotate(calc(var(--start-angle) * -1deg));
+  }
+  100% {
+    transform: rotate(calc(var(--start-angle) * 1deg - 360deg)) translateY(calc(var(--radius) * -1px)) rotate(calc(var(--start-angle) * -1deg + 360deg));
+  }
+}
+
+.animate-orbit {
+  animation: orbit calc(var(--duration) * 1s) linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-reverse calc(var(--duration) * 1s) linear infinite;
+}
