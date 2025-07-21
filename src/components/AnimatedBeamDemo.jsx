@@ -2,6 +2,14 @@ import React, { forwardRef, useRef } from "react";
 import { cn } from "../lib/utils";
 import { AnimatedBeam } from "./magicui/animated-beam";
 
+// Import images
+import chatgptLogo from "../assets/chatgpt-logo-transparent-background-free-png.webp";
+import whatsappLogo from "../assets/WhatsApp.svg.webp";
+import powerAutomateLogo from "../assets/Microsoft_Power_Automate.svg.png";
+import powerBiLogo from "../assets/New_Power_BI_Logo.svg.png";
+import officeLogo from "../assets/Microsoft_Office_logo_(2013–2019).png";
+import langchainLogo from "../assets/langchain-dp1uxj2zn3752pntqnpfu2.webp";
+
 const Circle = forwardRef(({ className, children }, ref) => {
   return (
     <div
@@ -54,13 +62,13 @@ export function AnimatedBeamDemo() {
           <div className="flex w-full max-w-7xl flex-row items-stretch justify-between">
             <div className="flex flex-col justify-center gap-12">
               <Circle ref={div1Ref} className="size-16 lg:size-20">
-                <img src="../src/assets/chatgpt-logo-transparent-background-free-png.webp" alt="ChatGPT" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
+                <img src={chatgptLogo} alt="ChatGPT" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
               </Circle>
               <Circle ref={div2Ref} className="size-16 lg:size-20">
-                <img src="../src/assets/WhatsApp.svg.webp" alt="WhatsApp" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
+                <img src={whatsappLogo} alt="WhatsApp" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
               </Circle>
               <Circle ref={div3Ref} className="size-16 lg:size-20">
-                <img src="../src/assets/Microsoft_Power_Automate.svg.png" alt="Power Automate" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
+                <img src={powerAutomateLogo} alt="Power Automate" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
               </Circle>
             </div>
             <div className="flex flex-col justify-center">
@@ -70,13 +78,13 @@ export function AnimatedBeamDemo() {
             </div>
             <div className="flex flex-col justify-center gap-12">
               <Circle ref={div4Ref} className="size-16 lg:size-20">
-                <img src="../src/assets/New_Power_BI_Logo.svg.png" alt="Power BI" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
+                <img src={powerBiLogo} alt="Power BI" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
               </Circle>
               <Circle ref={div5Ref} className="size-16 lg:size-20">
-                <img src="../src/assets/Microsoft_Office_logo_(2013–2019).png" alt="Microsoft Office" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
+                <img src={officeLogo} alt="Microsoft Office" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
               </Circle>
               <Circle ref={div6Ref} className="size-16 lg:size-20">
-                <img src="../src/assets/langchain-dp1uxj2zn3752pntqnpfu2.webp" alt="LangChain" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
+                <img src={langchainLogo} alt="LangChain" className="w-10 lg:w-12 h-10 lg:h-12 object-contain" />
               </Circle>
             </div>
           </div>
@@ -132,13 +140,13 @@ export function AnimatedBeamDemo() {
             {/* Top row - 3 services */}
             <div className="flex justify-center gap-4 w-full">
               <Circle className="size-12">
-                <img src="../src/assets/chatgpt-logo-transparent-background-free-png.webp" alt="ChatGPT" className="w-8 h-8 object-contain" />
+                <img src={chatgptLogo} alt="ChatGPT" className="w-8 h-8 object-contain" />
               </Circle>
               <Circle className="size-12">
-                <img src="../src/assets/WhatsApp.svg.webp" alt="WhatsApp" className="w-8 h-8 object-contain" />
+                <img src={whatsappLogo} alt="WhatsApp" className="w-8 h-8 object-contain" />
               </Circle>
               <Circle className="size-12">
-                <img src="../src/assets/Microsoft_Power_Automate.svg.png" alt="Power Automate" className="w-8 h-8 object-contain" />
+                <img src={powerAutomateLogo} alt="Power Automate" className="w-8 h-8 object-contain" />
               </Circle>
             </div>
 
@@ -166,13 +174,13 @@ export function AnimatedBeamDemo() {
             {/* Bottom row - 3 outputs */}
             <div className="flex justify-center gap-4 w-full">
               <Circle className="size-12">
-                <img src="../src/assets/New_Power_BI_Logo.svg.png" alt="Power BI" className="w-8 h-8 object-contain" />
+                <img src={powerBiLogo} alt="Power BI" className="w-8 h-8 object-contain" />
               </Circle>
               <Circle className="size-12">
-                <img src="../src/assets/Microsoft_Office_logo_(2013–2019).png" alt="Microsoft Office" className="w-8 h-8 object-contain" />
+                <img src={officeLogo} alt="Microsoft Office" className="w-8 h-8 object-contain" />
               </Circle>
               <Circle className="size-12">
-                <img src="../src/assets/langchain-dp1uxj2zn3752pntqnpfu2.webp" alt="LangChain" className="w-8 h-8 object-contain" />
+                <img src={langchainLogo} alt="LangChain" className="w-8 h-8 object-contain" />
               </Circle>
             </div>
           </div>
